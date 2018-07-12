@@ -29,7 +29,7 @@ class MusicLibraryController
         input = gets.strip
         case input
         when "list songs"
-          list_songs
+          songs
         when  "list artists"
           artists
         when "list genres"
@@ -44,7 +44,7 @@ class MusicLibraryController
       end
   end
 
-  def list_songs
+  def songs
     @sorted_songs.each_with_index do|song, num|
       puts "#{num+1}. #{song}"
     end
