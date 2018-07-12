@@ -8,6 +8,9 @@ class MusicLibraryController
 
   def call
     puts "Welcome to your music library!"
+    input = ''
+    @sorted_songs = sorter
+    while input != "exit"
     puts "What would you like to do?"
     puts "To list all of your songs, enter 'list songs'."
     puts "To list all of the artists in your library, enter 'list artists'."
