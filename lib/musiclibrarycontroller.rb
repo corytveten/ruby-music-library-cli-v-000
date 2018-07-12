@@ -2,21 +2,15 @@
 
 class MusicLibraryController
 
-  attr_accessor :music
+
 
   def initialize(path = "./db/mp3s")
-    @music = MusicImporter.new(path)
-    @music.import
-  end
-
-  def sorter
-    @music.files.sort
+    @music = MusicImporter.new(path).import
   end
 
   def call
+    user_input = ''
     puts "Welcome to your music library!"
-    input = ''
-    @sorted_songs = sorter
     while input != "exit"
       puts "What would you like to do?"
       puts "To list all of your songs, enter 'list songs'."
