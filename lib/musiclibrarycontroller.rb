@@ -35,7 +35,7 @@ class MusicLibraryController
           list_genre
         when "exit"
           return
-        end
+
       end
   end
 
