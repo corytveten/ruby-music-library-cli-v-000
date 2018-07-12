@@ -11,7 +11,6 @@ class MusicLibraryController
   def call
     user_input = ''
     puts "Welcome to your music library!"
-    while input != "exit"
       puts "What would you like to do?"
       puts "To list all of your songs, enter 'list songs'."
       puts "To list all of the artists in your library, enter 'list artists'."
@@ -34,6 +33,8 @@ class MusicLibraryController
           list_songs_by_artist
         when "list genre"
           list_genre
+        when "exit"
+          return
         end
       end
   end
