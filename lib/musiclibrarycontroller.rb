@@ -35,8 +35,14 @@ class MusicLibraryController
           list_songs_by_genre
         when "exit"
           return
-
-      end
+        else
+    		puts "-------------------------------------"
+    		puts "-------------------------------------"
+    		puts "You gave me #{user_input} -- I have no idea what to do with that."
+    		puts "-------------------------------------"
+    		puts "-------------------------------------"
+    		call
+    		end
   end
 
   def list_songs
