@@ -44,7 +44,7 @@ class MusicLibraryController
       end
   end
 
-  def songs
+  def list_songs
     @sorted_songs.each_with_index do|song, num|
       puts "#{num+1}. #{song}"
     end
