@@ -6,6 +6,10 @@ class MusicLibraryController
     MusicImporter.new(path).import
   end
 
+  def sorter
+    @music.files.sort
+  end
+
   def call
     puts "Welcome to your music library!"
     input = ''
