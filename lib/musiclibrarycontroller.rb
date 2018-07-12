@@ -29,7 +29,7 @@ class MusicLibraryController
         input = gets.strip
         case input
         when "list songs"
-          songs
+          list_songs
         when  "list artists"
           artists
         when "list genres"
